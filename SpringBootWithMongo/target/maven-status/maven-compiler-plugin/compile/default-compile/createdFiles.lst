@@ -1,0 +1,5 @@
+SpringBootWithMongo\SpringBootWithMongo\model\User.class
+SpringBootWithMongo\SpringBootWithMongo\model\UserRepository.class
+SpringBootWithMongo\SpringBootWithMongo\App.class
+SpringBootWithMongo\SpringBootWithMongo\SwaggerConfig.class
+SpringBootWithMongo\SpringBootWithMongo\service\UserService.class
