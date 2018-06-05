@@ -18,7 +18,7 @@ export default class AppContainer extends Component {
     getAllUsers() {
         axios.get(Base.API + '/').then(res => {
             this.setState({
-				users: res.data.data
+				users: res.data.data || res.data
 			});
         })
     }

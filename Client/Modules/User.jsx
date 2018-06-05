@@ -37,10 +37,10 @@ export default class User extends Component {
 
     render() {
         return <tr>
-            <td>{this.user._id}</td>
+            <td>{this.user._id || this.user.id}</td>
             <td>{this.user.name}</td>
-            <button onClick={(e) => this.update(this.user._id, this.user.name)}>Update</button>&nbsp;
-            <button onClick={(e) => this.delete(this.user._id)}>Delete</button>
+            <button onClick={(e) => this.update(this.user._id || this.user.id, this.user.name)}>Update</button>&nbsp;
+            <button onClick={(e) => this.delete(this.user._id || this.user.id)}>Delete</button>
         </tr>
     }
 }

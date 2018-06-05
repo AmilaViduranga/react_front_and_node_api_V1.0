@@ -32,7 +32,7 @@ export default class Users extends Component {
         <tbody>
           {
             this.users.map(user => {
-              return <User key={user._id} user={user} getAllUsers={() => this.props.getAllUsers()}/>
+              return <User key={user._id || user.id} user={user} getAllUsers={() => this.props.getAllUsers()}/>
             })
           }
         </tbody>
